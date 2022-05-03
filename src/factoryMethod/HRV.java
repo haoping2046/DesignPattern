@@ -1,8 +1,9 @@
 package factoryMethod;
 
-public class HRV extends Product {
+public class HRV extends Car {
+	
 	@Override
-	protected CarFactory createCar() {
-		return new HRVFactoryImpl();
+	public void brandName() {
+		System.out.println("Create a HRV car");
 	}
 }

@@ -6,11 +6,13 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		CarFactory civic = new Civic().getFactory();
-		civic.printInfo();
+		CarFactory civicFactory = new CivicFactoryImpl();
+		Car civic = civicFactory.createCar();
+		civic.brandName();
 		
-		CarFactory hrv = new HRV().getFactory();
-		hrv.printInfo();
+		CarFactory hrvFactory = new HRVFactoryImpl();
+		Car hrv = hrvFactory.createCar();
+		hrv.brandName();
 
 	}
 
