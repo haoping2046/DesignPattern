@@ -1,6 +1,6 @@
 package adapter;
 
-public class Transfer extends CarServiceV2 implements CarService {
+public class Adapter extends CarServiceV2 implements CarService {
 
 	@Override
 	public void maintance() {
